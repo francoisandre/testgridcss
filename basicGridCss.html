@@ -1,0 +1,89 @@
+<html>
+
+<head>
+<style>
+.menu {
+  grid-area: menu;
+}
+
+.menuburger {
+  grid-area: menuburger;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.content {
+  grid-area: content;
+}
+.aside {
+  grid-area: aside;
+}
+.footer {
+  grid-area: footer;
+}
+
+.bloc {
+  margin: 2px;
+  padding: 10px;
+  font-family: 'Poiret One', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas: 
+    "logo logo"
+    "menu menu"
+    "content aside"
+    "footer footer"
+}
+
+.color1 {
+	background-color:#BBCD6A
+}
+
+.color2 {
+	background-color:#A1B83D
+}
+
+
+.color3 {
+	background-color:#559532
+}
+
+.color4 {
+	background-color:#B3BEE6
+}
+
+.color5 {
+	background-color:#3DB89B
+}
+
+
+</style>
+
+ <link href='http://fonts.googleapis.com/css?family=Poiret One' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="logo bloc color1">Logo</div>
+  <div class="menu bloc color2">Menu</div>
+  <div class="content bloc color3">Contenu</div>
+  <div class="aside bloc color4">Infos</div>
+  <div class="footer bloc color5">Pied de page</div>
+</div>
+
+
+</body>
+
+
+</html>
